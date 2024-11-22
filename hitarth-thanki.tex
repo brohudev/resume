@@ -1,0 +1,195 @@
+%-------------------------
+% Resume in Latex
+% Author : Hitarth Thanki
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{helvet}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\begin{center}
+    \textbf{\Huge \scshape Hitarth Thanki} \\ \vspace{1pt}
+    {\underline{letsconnect@hitarth.dev}} $|$ 
+    {\underline{hitarth.dev}}  $|$
+    {\underline{linkedin.com/in/hitarth-thanki}} $|$
+    % \href{tel:+18325194502}{\underline{+1 (832) 519-4502}} $|$
+    {\underline{github.com/brohudev}}  $|$
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Houston}{Houston, Texas, USA}
+      {Bachelor of Science in Computer Science}{August 2022 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Algorithms, Data Structures, Operating Systems, Database Systems, Software Design, Computer Architecture, Linear Algebra}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+     \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+         \textbf{Languages}{: Java(5 years), Python(3 years), C/C++(3 years), Javascript(2 years), R(1 year)} \\
+         \textbf{Frameworks and Libraries}{(All 1 year): React, Node.js, Pygame, Tkinter, Material-UI, FastAPI} \\
+         \textbf{Developer Tools}{: Git(3 years), Linux(2 years), Cloudflare CDN (1 year) , GitHub(3 years), Binwalk, GDB, Radare} \\
+        }}
+     \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{{Stellar Scholars}}}{Jan 2024}
+          \resumeItemListStart
+            \resumeItem{Built a web browser video game using \textbf{Javascript}, \textbf{React}, \textbf{Pixi.js}, and \textbf{Tailwind CSS} to teach kids about the planets and moons of the Solar System. Integrated \textbf{OpenAI API} to create a context-aware chatbot for educational guidance. Deployed on \textbf{Cloudflare Pages}.}
+            \resumeItem{\textbf{Won 4 awards at TamuHack X (worth 500\$)}: Best Software Design (100\$), Best AI Application with Cloudflare (100\$), 4th place overall in Software track (250\$), and 3rd in the L3Harris Challenge (50\$).}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{{Dropawf}}}{Apr 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a pet-themed post office app with \textbf{NodeJS}, \textbf{React}, and \textbf{MySQL} for tracking packages and managing addresses. Hosted frontend on \textbf{Cloudflare Pages} and backend on \textbf{Render} and \textbf{Azure}.}
+            \resumeItem{Utilized \textbf{Git} for version control and continuously deployed to Cloudflare via \textbf{GitHub}.}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+            {\textbf{CyberAuto and CyberDrone Conferences}}{Jul-Sept 2024}
+            \resumeItemListStart
+                \resumeItem{Gained real-world penetration testing experience on production drones and cars.}
+                \resumeItem{Used tools like open5gs, Ghidra, binwalk, strace to \textbf{discover 3 Zero-Days Exploits} in a production drone system.}
+            \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Personal Portfolio}}{Aug. 2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed \textbf{{Version 1}} as a single-page portfolio using \textbf{React}, showcasing a simple card layout.}
+            \resumeItem{Developing Version 2 using Astro and Mard}
+          \resumeItemListEnd
+            
+    \resumeSubHeadingListEnd
+
+
+
+
+%-----------LEADERSHIP EXPERIENCE-----------
+\section{Leadership Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Director of CodeRED}{Jan 2024 -- Present}
+      {University of Houston}{Houston, Texas}
+      \resumeItemListStart
+        \resumeItem{Organized the largest hackathon in the Houston metropolitan area, with \textbf{450 participants}, \textbf{30\% female}, and \textbf{40\% from underrepresented groups}, overseeing all aspects of planning and implementation.}
+        \resumeItem{\textbf{Managed a team of 20 leaders}, coordinating efforts in Design, Code, Marketing, and Sponsorship acquisition for CodeRED.}
+        \resumeItem{Handled a budget of approximately \$40,000, optimizing resource allocation to maximize event impact.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Software Team Lead: USIP}{Jul 2023 -- Present}
+      {University of Houston}{Houston, Texas}
+      \resumeItemListStart
+        \resumeItem{\textbf{Led a 6-member software development team} for the Undergraduate Student Instrumentation Project (USIP), managing coding tasks and team collaboration.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Historian: CougarCS}{Nov 2022 -- Dec 2023}
+      {University of Houston}{Houston, Texas}
+      \resumeItemListStart
+        \resumeItem{\textbf{Captured and documented over 90 CougarCS events}, creating a visual and written record of key moments.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+%
+
+%-------------------------------------------
+\end{document}
