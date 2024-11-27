@@ -6,7 +6,7 @@ I am also itching to find an excuse to learn `Neovim`so this will be my first re
 
 ## Structure:
 
-#### `Main` Branch
+### `Main` Branch
 
 This branch tracks my Main Resume, effectively with all of the most important pieces in it. I will also set up an integration in the future such that My Portfolio will point to this so that the resume on my site is also always up to date. 
 
